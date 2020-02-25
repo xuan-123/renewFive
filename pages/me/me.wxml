@@ -1,2 +1,19 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<text>你已经获胜了{{count}}次</text>
+<view><text>你已经输了{{lowcount}}次</text></view>
+
+<view class="top">
+  <image src="{{img[currentNum]}}"></image>
+  <text style="color:red">{{tip}}</text>
+  <image src="{{img[imger]}}"></image>
+</view>
+<view class="bottom">
+    <text>出拳吧，小伙子！！！</text>
+    <view class="imgitem" >
+    <block wx:for="{{img}}" wx:key="index">
+      <image src="{{item}}" bindtap="imgclick" data-index="{{index}}"></image>
+    </block>
+    </view>
+    <button bindtap="renew">再来一次</button>
+    <button bindtap="tonull">清零</button>
+</view>

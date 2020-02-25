@@ -1,2 +1,9 @@
 <!--pages/car/car.wxml-->
 <text>pages/car/car.wxml</text>
+<template name="mytem">
+  <view>
+    name:{{name}}
+  </view>
+</template>
+<template is="mytem" data="{{name:'xuans'}}"></template>
+<template is="mytem" data="{{name:'nihao'}}"></template>

@@ -1,1 +1,38 @@
 /* pages/me/me.wxss */
+page{
+  background-color:rgba(255, 255, 9, 0.637);
+  text-align:center;
+  margin: 0 auto;
+}
+.top{
+
+  height: 200rpx;
+}
+.top image{
+  margin-top: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  
+}
+.bottom image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.bottom{
+  padding-top: 40rpx;
+  background-color: white;
+  width: 90%;
+  height:600rpx;
+  margin: 150rpx auto;
+}
+button{
+  background: yellow;
+  margin-top: 20rpx;
+}
+.imgitem{
+  margin: 0 auto;
+  width: 400rpx;  
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,2 +1,15 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+{{age}}{{name}}
+<button size="" type="warn" plain="{{plain}}"bind:tap="clickChange">点击改变数据</button>
+<view hidden="hhh">显示</view>
+
+
+  <view class="tabbar" >
+    <block wx:for='{{title}}'  wx:key="index">
+      <view class="tabitem {{flag==index?'active':''}}" data-index="{{index}}"  bind:tap="handClick">{{item}}</view>
+    </block>
+      
+  </view>
+
+<text>{{title[flag]}}</text>

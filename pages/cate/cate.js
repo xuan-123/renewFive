@@ -1,35 +1,18 @@
-// pages/home/home.js
-  let age = 18;
+// pages/cate/cate.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'xuan',
-    age,
-    plain:false,
-    flag:0,
-    title:['衣服','裤子','鞋子']
+
   },
-  clickChange(e){
-    this.setData({
-      name:'ni',
-      plain: !this.data.plain
-    })
-  },
-  handClick(e){
-    const newflag =e.currentTarget.dataset.index
-    this.setData({
-      flag:newflag
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var newup = getApp()
-    console.log(newup)
+
   },
 
   /**
@@ -43,11 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(this.data.name)
-    this.setData({
-      name : 'xuan123'
-    })
-    console.log(this.data.name)
+
   },
 
   /**
